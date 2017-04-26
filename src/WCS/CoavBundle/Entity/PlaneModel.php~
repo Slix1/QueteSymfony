@@ -167,33 +167,4 @@ class PlaneModel
     {
         return $this->status;
     }
-    /**
-     * @var \WCS\CoavBundle\Entity\Flight
-     */
-    private $departure;
-
-
-    /**
-     * Set departure
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $departure
-     *
-     * @return PlaneModel
-     */
-    public function setDeparture(\WCS\CoavBundle\Entity\Flight $departure = null)
-    {
-        $this->departure = $departure;
-
-        return $this;
-    }
-
-    /**
-     * Get departure
-     *
-     * @return \WCS\CoavBundle\Entity\Flight
-     */
-    public function getDeparture()
-    {
-        return $this->departure;
-    }
 }

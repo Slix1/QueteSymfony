@@ -126,33 +126,4 @@ class Reservation
     {
         return $this->passengers;
     }
-    /**
-     * @var \WCS\CoavBundle\Entity\Flight
-     */
-    private $resa;
-
-
-    /**
-     * Set resa
-     *
-     * @param \WCS\CoavBundle\Entity\Flight $resa
-     *
-     * @return Reservation
-     */
-    public function setResa(\WCS\CoavBundle\Entity\Flight $resa = null)
-    {
-        $this->resa = $resa;
-
-        return $this;
-    }
-
-    /**
-     * Get resa
-     *
-     * @return \WCS\CoavBundle\Entity\Flight
-     */
-    public function getResa()
-    {
-        return $this->resa;
-    }
 }

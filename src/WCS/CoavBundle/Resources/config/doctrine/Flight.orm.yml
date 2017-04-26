@@ -9,9 +9,7 @@ WCS\CoavBundle\Entity\Flight:
             generator:
                 strategy: AUTO
     fields:
-        departure:
-            type: string
-            length: '4'
+
         arrival:
             type: string
             length: '4'
@@ -23,3 +21,13 @@ WCS\CoavBundle\Entity\Flight:
         tokeofTime:
             type: datetime
     lifecycleCallbacks: {  }
+
+    manyToOne:
+                departure:
+                    targetEntity: WCS\CoavBundle\Entity\Terrain
+                    inversedBy: departures
+
+    oneToMany:
+            vols:
+              targetEntity: WCS\CoavBundle\Entity\Reservation
+              mappedBy: resa
